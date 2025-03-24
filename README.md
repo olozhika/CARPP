@@ -13,7 +13,6 @@
   - Continuous temperature profiles with customizable central and ambient parameters.
 - **Robust Performance**: Achieves <10% average parameter error under optimal noise/resolution conditions.
 
----
 
 ## 📥 Installation and Usage
 
@@ -23,7 +22,6 @@ The CARPP package in this repo is the IDL version of CARPP. To use CARPP, you sh
 2. add the path of CARPP to your IDL at `Preferences - IDL - Paths`
 3. edit and run `run_carpp.pro`
 
----
 
 ## 📜 Citation
 
