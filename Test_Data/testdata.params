@@ -1,0 +1,33 @@
+core mass           =      29.9999 solar masses
+beta                =     -1.60000
+alpha               =      1.70001
+r0                  =     0.049000267 pc
+T0                  =      30.0001 K
+T1                  =      15.0000 K
+rt                  =     0.048999618 pc
+reduced chi squared =  2.79373e-12
+T(rout)             =      15.8765
+Rho(rout)           =       10300.558
+ 
+Model density profile (number density of H2):
+ 
+N(r) = N(0)/(1. + (r/r0)^alpha)
+ 
+where N(0) =       119693.60 cm^-3 and r is in units of layers
+(1 layer =    0.0039339721 pc)
+ 
+Model temperature profile:
+ 
+T(r) = T1 + (T0-T1)/(1. + (r/rt)^gamma)K, where gamma =      2.00000
+ 
+automatic Rout =      0.19669861
+nlayers             =      50
+printf_p_init =      42.7714     -1.60000      1.80000      25.0000      15.0000
+      6.25000      12.5000
+P[fit_set(1)] =      29.9999     -1.60000      1.70001      30.0001      15.0000
+      12.4555      12.4557
+P[fit_set(1)] =      29.9999     -1.60000      1.70001      30.0001      15.0000
+      12.4555      12.4557
+ 
+Input fit settings:
+fit_setting  =       0      -1
