@@ -1,6 +1,6 @@
     pro run_carpp
 
-; Run COREFIT on Ori2-2 data and plot the results.
+; Run COREFIT on test data and plot the results.
 
 ;--------------------------------------------------------------------------
 ; Set the various required parameter values.
