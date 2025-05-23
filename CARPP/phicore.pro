@@ -100,7 +100,7 @@
             if beta1 gt printf_p_init(1)+delta_beta then rchisq = rchisq + ((beta1 - printf_p_init(1))/0.1)^2
         endif
         if p(2-beta_i) lt printf_p_init(2-beta_i)-delta_alpha then rchisq = rchisq + ((p(2-beta_i) - printf_p_init(2-beta_i))/0.1)^2
-        if p(2-beta_i) lt printf_p_init(2-beta_i)+delta_alpha then rchisq = rchisq + ((p(2-beta_i) - printf_p_init(2-beta_i))/0.1)^2
+        if p(2-beta_i) gt printf_p_init(2-beta_i)+delta_alpha then rchisq = rchisq + ((p(2-beta_i) - printf_p_init(2-beta_i))/0.1)^2
 	if p(0) lt printf_p_init(0)/delta_cloudmass then rchisq = rchisq + ((p(0) - printf_p_init(0))/0.1)^2
         if p(0) gt printf_p_init(0)*delta_cloudmass then rchisq = rchisq + ((p(0) - printf_p_init(0))/0.1)^2
     endif
