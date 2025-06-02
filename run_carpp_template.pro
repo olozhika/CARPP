@@ -28,6 +28,10 @@
     ;routset=0.2 ; set full radius of the core [pc], useful when your FOV is not enough
     ;sed     = 'input_spectra.dat'  ; name of your additional SED file
     outname = 'testdata'            ; root name for the output files
+
+    ; can limit some parameter ranges in setup_parameter_range.pro
+    ; change the constants like dust opacity in setup_header.pro
+    
 ;--------------------------------------------------------------------------
 
 ; Run COREFIT.
