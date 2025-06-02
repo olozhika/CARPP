@@ -29,7 +29,7 @@
     ;sed     = 'input_spectra.dat'  ; name of your additional SED file
     outname = 'testdata'            ; root name for the output files
 
-    ; can limit some parameter ranges in setup_parameter_range.pro
+    ; can limit some parameter ranges in setup_parameter_range.pro (not used by default)
     ; change the constants like dust opacity in setup_header.pro
     
 ;--------------------------------------------------------------------------
