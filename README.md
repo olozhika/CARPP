@@ -1,6 +1,6 @@
 # CARPP: Core Analysis via Radiative Transfer and Profile Parameters
 
-**CARPP** is a powerful tool for analyzing dense molecular cores using multi-wavelength dust continuum observations. It leverages 3D radiative transfer under spherical symmetry to derive accurate density, temperature, and spectral index profiles, enabling researchers to distinguish between hydrostatic equilibrium (Bonnor-Ebert spheres) and dynamically collapsing cores (power-law profiles).
+**CARPP** is a powerful tool for analyzing dense molecular cores using multi-wavelength dust continuum observations. It leverages 3D radiative transfer under spherical symmetry to **derive density, temperature profiles, and spectral index**, enabling researchers to distinguish between hydrostatic equilibrium (Bonnor-Ebert spheres) and dynamically collapsing cores (power-law profiles).
 
 ---
 
