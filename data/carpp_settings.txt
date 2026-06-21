@@ -1,0 +1,48 @@
+# ==============================================================================
+# CARPP Configuration Settings
+# ==============================================================================
+
+# --- Data Input ---
+image_files = ['image-350um.fits', 'image-450um.fits', 'image-850um.fits'] # Updated by Simulator
+wavelengths_microns = [350.0, 450.0, 850.0]
+fwhm_arcsec = [4.9822416967897665, 4.9822416967897665, 4.9822416967897665]
+back_levels = [0.0, 0.0, 0.0]                                               # Background level to subtract [FITS unit]
+noise_rms = [0.0, 0.0, 0.0]
+cal_error = 0.1                                                             # Calibration error factor (e.g., 0.1 for 10%)
+
+# --- Core Coords ---
+center_type = 'pixel'                                                       # Center type: 'pixel' (0-based pixel coords) or 'sky' (RA/Dec)
+center_val = [39.0, 39.0]
+n_cells = 79
+
+# --- Physical Parameters ---
+distance_pc = 414.0                                                       # Distance to the cloud core [Unit: pc]
+rout_pc = 0.1975
+grain_radius_microns = 0.1                                                # Dust grain radius [Unit: microns] (Default: 0.1)
+
+# --- Fitting Control ---
+qz1 = 1.0                                                                 # Pixel weighting factor: 1/(dist^qz1). Higher emphasizes core.
+
+# Method: 
+# 'powell' - Local search, fast, needs good initial guess
+# 'global' - Global search via Diff-Evolution, slow but robust
+# 'mcmc'   - Bayesian sampling, provides uncertainty and degeneracy analysis
+method = 'global'
+
+# Parallel / MCMC Control:
+workers = -1                                                               # Number of CPU workers. Set -1 to use all cores
+popsize = 30                                                              # (Global only) Population multiplier.
+maxiter = 5000                                                             # (Global only) Max generations.
+tol = 0.001                                                               # (Global only) Convergence tolerance.
+
+# MCMC specific:
+nwalkers = 32                                                             # Number of walkers
+nsteps = 2000                                                             # Number of steps per walker
+
+# Initial guess (used by 'powell' and 'mcmc' method)
+# [Cloud_Mass, Beta, Alpha, T0, T1, rt, r0]
+initial_guess = [30.0, -1.6, 1.7, 30.0, 15.0, 0.05, 0.05]
+
+# Parameter bounds (Required for 'global' and 'mcmc' search; also apples for 'powell' mode)
+# Format: (min, max) for each [Mass, Beta, Alpha, T0, T1, rt, r0]         # Mass in Msun, r in pc, T in K
+bounds = [(1, 100), (-2.5, -1.0), (1.0, 3.0), (5, 60), (5, 30), (0.01, 0.2), (0.01, 0.2)]

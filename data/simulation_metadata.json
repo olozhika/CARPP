@@ -1,0 +1,36 @@
+{
+    "physical_parameters": {
+        "Mass_Msun": 30.0,
+        "Beta": -1.6,
+        "Alpha": 1.7,
+        "T0_K": 30.0,
+        "T1_K": 15.0,
+        "rt_pc": 0.05,
+        "r0_pc": 0.05,
+        "rout_pc": 0.1975
+    },
+    "observation_settings": {
+        "wavelengths_um": [
+            350.0,
+            450.0,
+            850.0
+        ],
+        "fwhm_beams_arcsec": [
+            4.9822416967897665,
+            4.9822416967897665,
+            4.9822416967897665
+        ],
+        "pixel_size_arcsec": 2.4911208483948832,
+        "n_cells": 79,
+        "noise_rms_jy_beam": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "filenames": [
+            "image-350um.fits",
+            "image-450um.fits",
+            "image-850um.fits"
+        ]
+    }
+}
