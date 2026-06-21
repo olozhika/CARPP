@@ -16,9 +16,21 @@
 
 ## 📥 Installation and Usage
 
-The CARPP package in this repo is the IDL version of CARPP. To use CARPP, you should: 
+### main branch (python)
 
-1. Download the repo
+1. download the main branch
+2. edit `carpp_setting.txt` in the `data` folder
+3. in python, do
+   ```
+   import CARPP_py
+   results = CARPP_py.run_carpp('data/carpp_settings.txt')
+   ```
+
+### the idl branch
+
+You can also use the the IDL version of CARPP. To use CARPP, you should: 
+
+1. Go to the `CARPP_IDL` branch, ownload the repo
 2. Make sure you have IDL installed on your device
 3. Add the path of CARPP to your IDL at `Preferences - IDL - Paths`
 4. Do `idl run_carpp.pro` in `Test_Data` folder, it should start to calculate the test core
